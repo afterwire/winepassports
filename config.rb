@@ -2,11 +2,10 @@ require "uglifier"
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
-  # require 'sprockets/es6'
+activate :gh_pages do |gh_pages|
+  gh_pages.remote = 'git@github.com:afterwire/winepassports.git'
+end
 
-  # activate :sprockets do |s|
-  #   s.supported_output_extensions << '.js'
-  # end
 
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
