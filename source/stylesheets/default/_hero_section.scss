@@ -1,0 +1,26 @@
+.passport-hero {
+  background-image: image-url('hero/winery-path-small.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+
+  &__body {
+    margin-bottom: 12rem;
+    margin-top: 12rem;
+  }
+
+  &__appstore {
+    height: 4rem;
+  }
+
+  &__title {
+    font-size: 4rem;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .passport-hero {
+    background-image: image-url('hero/winery-path.jpg');
+  }
+}

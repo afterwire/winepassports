@@ -1,0 +1,21 @@
+.wine-callout {
+  overflow: hidden;
+  &__image {
+    visibility: hidden;
+  }
+
+  &__text {
+    padding: 2.5rem;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .wine-callout__image {
+    visibility: visible;
+    background-image: image-url('hero/pouring-wine.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+  }
+}

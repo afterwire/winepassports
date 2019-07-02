@@ -1,0 +1,14 @@
+.lyft-callout {
+  overflow: hidden;
+  &__image {
+    background-image: image-url('driver-picture.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    
+  }
+
+  &__text {
+    padding: 2.5rem;
+  }
+}

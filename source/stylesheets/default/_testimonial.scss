@@ -1,0 +1,14 @@
+.testimonial {
+  background: $purple;
+  min-height: 500px;
+  font-family: 'Shadows Into Light', cursive;
+  font-display: auto;
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .testimonial {
+    background-image: image-url('woman2.jpg');
+    background-size: cover;
+  }
+}
