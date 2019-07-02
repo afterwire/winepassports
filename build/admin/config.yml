@@ -1,0 +1,14 @@
+backend:
+  name: git-gateway
+
+media_folder: source/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: blog
+    label: Blog
+    folder: source/
+    extension: .html.erb
+    format: frontmatter
+    fields:
+      - {label: Title, name: title, widget: string}
