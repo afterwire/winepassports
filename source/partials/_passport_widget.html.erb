@@ -1,0 +1,25 @@
+<script src="https://widgets.pssprt.co/savor.js"></script>
+<script src="https://js.stripe.com/v3/"></script>
+<% if config[:environment] == :production %>
+  <script type="text/javascript">
+      (function (window) {
+          var passport = {
+              buy: function () {
+                  window.pssprt.init({ 'appId': "savor-prod-wine" });
+              }
+          }
+          window.passport = passport;
+      })(window);
+  </script>
+<% else %>
+  <script type="text/javascript">
+      (function (window) {
+          var passport = {
+              buy: function () {
+                  window.pssprt.init({ 'appId': "savor-staging-wine" });
+              }
+          }
+          window.passport = passport;
+      })(window);
+  </script>
+<% end %>

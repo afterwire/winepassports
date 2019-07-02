@@ -1,16 +1,23 @@
 <!doctype html>
-<html>
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
+    <%= partial "partials/gtm_js" %>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "Savor Seattle Wine Passports" %></title>
+    <link rel="shortcut icon" href="https://x6b9s6t4.stackpathcdn.com/favicon.ico" type="image/x-icon" />
     <%= stylesheet_link_tag "default/application" %>
-    <%= javascript_include_tag "site" %>
+    
+    <% unless current_page.data.meta_description.blank? %>
+      <meta name="description" content="<%= current_page.data.meta_description %>">
+    <% end %>
   </head>
   <body>
+    <%= partial "partials/gtm_fallback" %>
     <%= yield %>
+    <%= javascript_include_tag "site" %>
+    <%= partial "partials/passport_widget" %>
   </body>
 </html>
