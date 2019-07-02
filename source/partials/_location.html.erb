@@ -1,7 +1,10 @@
 <div class="card" itemscope itemtype="http://schema.org/Winery">
   <div class="card-image">
     <figure class="image is-4by3">
-      <%= image_tag("", alt: name, loading: "lazy", class: "lazy", data: {src: path_to_image(image)} ) %>
+      <img alt="<%= name %>" class="lazy" loading="lazy" data-src="<%= image_path(image) %>">
+      <noscript>
+      <%= image_tag(image_path(image), alt: name ) %>
+      </noscript>
     </figure>
   </div>
   <div class="card-content">

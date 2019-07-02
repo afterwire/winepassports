@@ -5,7 +5,7 @@
   <div class="columns">
     <div class="column">
 
-      <%= render partial: "default/shared/location", locals: { 
+      <%= partial "partials/location", locals: { 
         name: "Alexandria Nicole Cellars",
         street: "2880 Lee Rd, Suite D",
         city: "Prosser",
@@ -16,7 +16,7 @@
 
     </div>
     <div class="column">
-      <%= render partial: "default/shared/location", locals: { 
+      <%= partial "partials/location", locals: { 
         name: "Basel Cellars",
         street: "15029 Woodinville-Redmond Rd",
         city: "Woodinville",
@@ -26,7 +26,7 @@
       } %>
     </div>
     <div class="column">
-      <%= render partial: "default/shared/location", locals: { 
+      <%= partial "partials/location", locals: { 
         name: "Charles Smith Wines Jet City",
         street: "1136 S Albro Pl",
         city: "Seattle",
@@ -38,7 +38,7 @@
   </div>
   <div class="columns">
     <div class="column">
-      <%= render partial: "default/shared/location", locals: { 
+      <%= partial "partials/location", locals: { 
         name: "Chateau Ste. Michelle Winery",
         street: "14111 NE 145th St",
         city: "Woodinville",
@@ -48,7 +48,7 @@
       } %>
     </div>
     <div class="column">
-      <%= render partial: "default/shared/location", locals: { 
+      <%= partial "partials/location", locals: { 
         name: "Cloudlift Cellars",
         street: "312 S Lucile St",
         city: "Seattle",
@@ -59,7 +59,7 @@
     </div>
     <div class="column">
       
-      <%= render partial: "default/shared/location", locals: { 
+      <%= partial "partials/location", locals: { 
         name: "Columbia Winery",
         street: "14030 NE 145th St",
         city: "Woodinville",
@@ -78,7 +78,7 @@
   <div class="is-hidden">
     <div class="columns">
       <div class="column">
-        <%= render partial: "default/shared/location", locals: { 
+        <%= partial "partials/location", locals: { 
           name: "Cougar Crest Estate Winery",
           street: "14366 Woodinville-Redmond Road NE",
           city: "Redmond",
@@ -88,7 +88,7 @@
         } %>
       </div>
       <div class="column">
-        <%= render partial: "default/shared/location", locals: { 
+        <%= partial "partials/location", locals: { 
           name: "DeLille Cellars Tasting Room",
           street: "14421 Redmond-Woodinville Rd NE",
           city: "Woodinville",
@@ -98,7 +98,7 @@
         } %>
       </div>
       <div class="column"> 
-        <%= render partial: "default/shared/location", locals: { 
+        <%= partial "partials/location", locals: { 
           name: "Nine Hats Wines",
           street: "3861 1st Ave S",
           city: "Seattle",
@@ -111,12 +111,12 @@
 
     <div class="more-locations-cta has-text-centered	">
       <p class="is-size-3">Want to see the full list of our venues? Just select the appropriate app store for your device!</p>
-      <%= link_to "https://play.google.com/store/apps/details?id=com.pssprt.savor.mobile" do %>
+      <a href="https://play.google.com/store/apps/details?id=com.pssprt.savor.mobile">
         <%= image_tag "google-play-badge.svg", width: "200", class: "passport-hero__appstore", alt: "Google Play App Store" %>
-      <% end %>
-      <%= link_to "https://itunes.apple.com/us/app/savor-seattle/id1367652737?l=fr&ls=1&mt=8" do %>
+      </a>
+      <a href="https://itunes.apple.com/us/app/savor-seattle/id1367652737?l=fr&ls=1&mt=8">
         <%= image_tag "apple-appstore-badge.svg", width: "200", class: "passport-hero__appstore", alt: "Apple App Store" %>
-      <% end %>
+      </a>
     </div>
 
     
