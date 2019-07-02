@@ -1,11 +1,12 @@
+require "uglifier"
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
-require 'sprockets/es6'
+  # require 'sprockets/es6'
 
-activate :sprockets do |s|
-  s.supported_output_extensions << '.js'
-end
+  # activate :sprockets do |s|
+  #   s.supported_output_extensions << '.js'
+  # end
 
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
@@ -48,7 +49,11 @@ page '/*.txt', layout: false
 
 configure :build do
   activate :minify_css
-  activate :minify_javascript
+  # Minify Javascript on build
+  #activate :minify_javascript, :ignore => "**/admin/**", compressor: ::Uglifier.new(mangle: true, compress: { drop_console: true }, output: {comments: :none})
+
+  # Use Gzip
+  activate :gzip
   set :environment, :production
 end
 
