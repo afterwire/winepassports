@@ -54,6 +54,7 @@ configure :build do
   # Use Gzip
   activate :gzip
   set :environment, :production
+  activate :relative_assets
 end
 
 configure :development do
