@@ -1,6 +1,12 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
+require 'sprockets/es6'
+
+activate :sprockets do |s|
+  s.supported_output_extensions << '.js'
+end
+
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
