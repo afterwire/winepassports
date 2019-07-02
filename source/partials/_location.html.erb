@@ -1,0 +1,22 @@
+<div class="card" itemscope itemtype="http://schema.org/Winery">
+  <div class="card-image">
+    <figure class="image is-4by3">
+      <%= image_tag("", alt: name, loading: "lazy", class: "lazy", data: {src: path_to_image(image)} ) %>
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media">
+      <div class="media-content">
+        <p class="title is-4" itemprop="name"><%= name %></p>
+        <p class="subtitle is-6" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="streetAddress"><%= street %></span>,
+          <span itemprop="addressLocality"><%= city %></span>,
+          <span itemprop="addressRegion"><%= state %></span>
+        </p>
+      </div>
+    </div>
+    <div class="content" itemprop="description">
+      <%= description %>
+    </div>
+  </div>
+</div>

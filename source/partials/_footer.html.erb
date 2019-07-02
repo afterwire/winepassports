@@ -1,0 +1,18 @@
+<section class="is-info hero">
+  <div class="passport-hero__body">
+    <div class="container has-text-centered">
+      <h1 class="title has-text-white passport-hero__title">
+        What are you waiting for?
+      </h1>
+      <h3 class="title has-text-white">
+        Download the app now and start planning your own Seattle wine adventure!
+      </h3>
+        <%= link_to "https://play.google.com/store/apps/details?id=com.pssprt.savor.mobile" do %>
+          <%= image_tag "google-play-badge.svg", class: "passport-hero__appstore", alt: "Google Play App Store" %>
+        <% end %>
+        <%= link_to "https://itunes.apple.com/us/app/savor-seattle/id1367652737?l=fr&ls=1&mt=8" do %>
+          <%= image_tag "apple-appstore-badge.svg", class: "passport-hero__appstore", alt: "Apple App Store" %>
+        <% end %>
+    </div>
+  </div>
+</section>

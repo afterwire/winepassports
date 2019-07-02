@@ -1,0 +1,6 @@
+<section class="introduction section">
+  <div class="content container is-large has-text-centered">
+    <h1><%= content(headline).try(:html_safe) %></h1>
+    <%= content(text).try(:html_safe) %>
+  </div>
+</section>

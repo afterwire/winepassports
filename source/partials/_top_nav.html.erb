@@ -1,0 +1,28 @@
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a href="#" class="navbar-item">
+      <picture>
+        <source srcset="<%= image_path "savor-seattle-food-tours.gif" %>" media="(min-width: 768px)">
+        <img srcset="<%= image_path "savor-seattle-food-tours-small-2x.gif" %> 2x", src="<%= image_path "savor-seattle-food-tours-small.gif" %>">
+      </picture>
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="primaryTopNavBar">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="primaryTopNavBar" class="navbar-menu">
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a href="javascript:;" class="button is-link buy-link" data-id="1157" onclick="passport.buy();">
+            <strong>Buy Wine Passport</strong>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
