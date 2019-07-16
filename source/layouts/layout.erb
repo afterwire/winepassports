@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <%= partial "partials/gtm_js" %>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="canonical" href="https://winepassport.savorseattletours.com/">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><%= current_page.data.title || "Savor Seattle Wine Passports" %></title>
@@ -15,6 +16,33 @@
     <% end %>
   </head>
   <body>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org/",
+        "@type": "MobileApplication",
+        "name": "Savor Seattle",
+        "downloadUrl": [
+          "https://play.google.com/store/apps/details?id=com.pssprt.savor.mobile",
+          "https://itunes.apple.com/us/app/savor-seattle/id1367652737?l=fr&ls=1&mt=8"
+        ],
+        "applicationCategory": "TravelApplication",
+        "operatingSystem": [
+         "iOS",
+         "Android"
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "reviewCount": "33"
+  		  },
+        "offers": {
+          "@type": "Offer",
+          "price": "59.99",
+          "priceCurrency": "USD",
+          "url": "https://winepassport.savorseattletours.com/"
+        }
+      }
+    </script>
     <%= partial "partials/gtm_fallback" %>
     <%= yield %>
     <%= javascript_include_tag "bulma-collapsible.min" %>
