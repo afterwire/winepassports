@@ -4,10 +4,7 @@ title: Savor Seattle Wine Passports
 meta_description: Seattle Wine Passport is an exciting new app from the team behind Savor Seattle designed to provide you with access to Seattle's best wineries at a fraction of their regular cost.
 hero_headline: Discover the best wine Seattle has to offer...
 intro_headline: A Wine Experience Like No Other...
-intro_text: "Explore the best wineries in Seattle and Woodinville! Choose your own 10 tasting 
-            locations, with <strong>all wine tastings included</strong>, and let Lyft 
-            be your designated drive with <strong>$50 in free ride credits!</strong> Enjoy 
-            total flexibility, at you own pace, on your own schedule."
+intro_text: "<strong>Taste & Experience the Best of Seattle Wines</strong> Explore and savor the best wineries in Seattle and nearby Woodinville! Choose your own 10 tasting locations, with <strong>all wine tastings included</strong>, and let Lyft be your designated driver with <strong>$50 in free ride credits!</strong> Enjoy total flexibility, at your own pace, on your own schedule."
 about_headline: Trust the Seattle Experts
 about_text: "<p>
           Savor Seattle has been treating locals and visitors to the best food and drink 
@@ -46,17 +43,21 @@ footer_text: Download the app now and start planning your own Seattle wine adven
   headline: current_page.data.hero_headline
 } %>
 
+<%= partial "partials/features" %>
+
 <%= partial "partials/intro_text", locals: {
   intro_headline: current_page.data.intro_headline,
   intro_text: current_page.data.intro_text
 } %>
+
+<%= partial "partials/howitworks" %>
 
 <%= partial "partials/wine", locals: {
   about_headline: current_page.data.about_headline,
   about_text: current_page.data.about_text
 } %>
 
-<%= partial "partials/howitworks" %>
+
 
 <%= partial "partials/testimonial" %>
 
