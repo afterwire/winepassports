@@ -110,7 +110,18 @@ function setupNavBar() {
   }
 }
 
+function setupFAQ() {
+  // Return an array of bulmaCollapsible instances (empty if no DOM node found)
+  var bulmaCollapsibleInstances = bulmaCollapsible.attach('.is-collapsible'); // Loop into instances
+
+  bulmaCollapsibleInstances.forEach(function (bulmaCollapsibleInstance) {
+    // Check if current state is collapsed or not
+    console.log(bulmaCollapsibleInstance.collapsed());
+  });
+}
+
 
 ready(setupLocationButtonListener);
 ready(lazyLoadImages);
 ready(setupNavBar);
+ready(setupFAQ);

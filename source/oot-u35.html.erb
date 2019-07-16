@@ -50,12 +50,12 @@ footer_text: Download the app now and start planning your own Seattle wine adven
   intro_text: current_page.data.intro_text
 } %>
 
-<%= partial "partials/howitworks" %>
-
 <%= partial "partials/wine", locals: {
   about_headline: current_page.data.about_headline,
   about_text: current_page.data.about_text
 } %>
+
+<%= partial "partials/howitworks" %>
 
 <%= partial "partials/testimonial" %>
 
@@ -67,6 +67,8 @@ footer_text: Download the app now and start planning your own Seattle wine adven
 } %>
 
 <%= partial "partials/locations" %>
+
+<%= partial "partials/faq" %>
 
 <%= partial "partials/footer", locals: {
   footer_headline: current_page.data.footer_headline,

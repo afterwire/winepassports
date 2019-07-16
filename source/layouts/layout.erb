@@ -17,6 +17,7 @@
   <body>
     <%= partial "partials/gtm_fallback" %>
     <%= yield %>
+    <%= javascript_include_tag "bulma-collapsible.min" %>
     <%= javascript_include_tag "site" %>
     <%= partial "partials/passport_widget" %>
   </body>
